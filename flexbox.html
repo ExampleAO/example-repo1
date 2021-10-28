@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox practice</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            /* height: 500px; */
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            /* align-items: flex-start */
+
+        }
+        .flex-item{
+            border: 2px solid rgba(0, 0, 0, 0.4);
+            width: 20%;
+           
+        }
+
+        .item-1{
+            /* order: 2; */
+            /* flex-grow:4 ; */
+            /* flex-shrink: 1; */
+            /* flex-basis: 400px; */
+            align-self: center;
+
+            
+            
+        }
+        .item-2{
+            /* order: 1; */
+            /* flex-grow: 0; */
+            /* flex-shrink: 1; */
+        }
+        .item-3{
+            /* order: 3; */
+            /* flex-grow: 0; */
+            /* flex-shrink: 0; */
+            align-self: flex-start;
+        }
+        .item-4{
+            /* order: 4; */
+            /* flex-grow: 0; */
+            /* flex-shrink: 0; */
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="flex-container">
+        <div class="flex-item item-1">
+            <h1>FLEX Item 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="flex-item item-2">
+            <h1>FLEX Item 2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elitipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="flex-item item-3">
+            <h1>FLEX Item 3</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="flex-item item-4">
+            <h1>FLEX Item 4</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    
+</body>
+</html>
